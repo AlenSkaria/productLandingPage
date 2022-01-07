@@ -34,11 +34,22 @@ a{
     text-decoration: none;
     color: #fff;
 }
-
+@media (max-width: 550px) {
+    #header{
+        padding: 20px 2rem;
+    }
+    #nav-bar ul{
+        column-gap: 10px;
+    }
+    a{
+        font-size: .7rem;
+    }
+}
 
 #hero{
     display: flex;
     position: relative;
+    width: 100%;
     justify-content: space-around;
     top: 4rem;
     padding: 4rem 8rem;
@@ -65,12 +76,20 @@ a{
     padding: 5rem 3rem;
 }
 
+@media (max-width: 550px) {
+    #about{
+        text-align: center;
+        padding: 0;
+    }
+}
+
 #about h4{
     font-size: 2rem;
     margin: 1rem;
 }
 .we{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 1;
     padding: 2rem 6rem;
 }
@@ -86,4 +105,19 @@ a{
     padding: 1rem;
 }
 @media (max-width: 550px) {
+
+    iframe {
+        max-width: 550px;
+        width: 100%;
+      }
+    .we div{
+        border: solid rgb(167, 167, 167) 1px;
+        margin: .3rem;
+        padding: .7rem;
+        border-radius: 5px;
+    }
+    .we i{
+        font-size: 2rem;
+        padding: 1rem;
+    }
 }
