@@ -19,7 +19,7 @@ body{
     height: 4rem;
     position: fixed;
     color: #fff;
-    background: rgb(112, 112, 112);
+    background: rgb(189, 189, 189);
     z-index: 100;
 }
 
@@ -52,15 +52,31 @@ a{
     width: 100%;
     justify-content: space-around;
     top: 4rem;
-    padding: 4rem 8rem;
-    background: burlywood;
+    padding: 6rem 8rem;
+    background: rgb(189, 189, 189);
 }
+#hero h2{
+font-size: 2rem;
+}
+@media (max-width: 550px) {
+    #hero{
+    flex-direction: column;
+    padding: 1.56rem;
+    text-align: center;
+    }
+    #form{
+        align-items: center;
+    }
+
+
+}
+
 
 #form > input{
     display: flex;
     margin: 1rem;
-    padding: 10px;
-    border: 3px rgb(172, 172, 172) solid;
+    padding: 10px 4rem;
+    border: 3px rgb(204, 204, 204) solid;
 }
 .button{
     cursor: pointer;
@@ -77,6 +93,13 @@ a{
 }
 
 @media (max-width: 550px) {
+
+    #form > input{
+        display: flex;
+        margin: 1rem;
+        padding: 1rem;
+        
+    }
     #about{
         text-align: center;
         padding: 0;
@@ -89,7 +112,7 @@ a{
 }
 .we{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     column-gap: 1;
     padding: 2rem 6rem;
 }
@@ -119,5 +142,11 @@ a{
     .we i{
         font-size: 2rem;
         padding: 1rem;
+    }
+    .we{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1;
+        padding: 2rem;
     }
 }
